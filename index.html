@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Editor Online</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/imagens/logo.png" alt="Logo da página" />
+        <h1>Editor Online</h1>
+      </div>
+    </header>
+
+    <section>
+      <menu>
+        <button> <img src="/imagens/italico.png" id="Itálico" alt="Itálico"></button>
+        <button> <img src="/imagens/negrito.png" id="Negrito" alt="Negrito">
+        <button> <img src="/imagens/sublinhado.png" id="Sublinhado" alt="Sublinhado"></button>
+        <button> <img src="/imagens/letra_mais.png" id="AumentarFonte" alt="Aumentar fonte"></button>
+        <button><img src="/imagens/letra_menos.png" id="DiminuirFonte" alt="Diminuir fonte"></button>
+      </menu>
+    </section>
+
+    <section>
+      <form>
+        <input type="text" id="texto-entrada" placeholder="Insira seu texto aqui " required />
+        <button class="form-btn"> Aplicar estilo </button>
+      </form>
+    </section>
+
+    <section>
+      <p id="texto-saida" class="texto-saida"></p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
